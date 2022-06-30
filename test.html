@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>留言本</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="jquery-3.6.0.js"></script>
+	</head>
+	<body style="width: 1250px;height: auto;">
+	<div class="topheight" style="overflow: hidden;">
+	<div style="overflow: hidden;">
+			<div style="width:800px;float: left;height: 1000px;">
+			
+				<!-- 发表留言 -->
+				<div>
+					<form action="save.php" method="post">
+						<textarea cols="50" rows="5" name="content"></textarea>
+						<br/>
+						<input type="text" name="user">
+						<input type="submit" value="发表留言">
+					</form>
+				</div>
+				<!--查看 -->
+				<div>
+					<div>
+						用户名<br/>留言时间<br/>
+					</div>
+				</div>
+
+				<hr>
+
+				<div>
+					<p>这是一个&copy;版权、商标&trade;</p>
+					<p>R<sup>2</sup><sub>cum</sub></p>
+					<p>我的购物车<i><sup style="background-color: red;color: blue;border-radius: 5px;">0</sup></i></p>
+
+				</div>
+
+				<div class="nav2" >
+					<ul>
+						<li>1</li>
+						<li class="nav2_line"></li>
+						<li>2</li>
+						<li class="nav2_line"></li>
+						<li>3</li>
+						<li class="nav2_line"></li>
+						<li>4</li>
+					</ul>
+				</div>
+
+				<style type="text/css">
+					.nav2 li { float: left;display: inline-block;padding: 0px ;background-color: red;}
+
+					.nav2 li.nav2_line{
+						height: 12px;
+						width: 1px;
+						margin-top: 8px;
+						background-color: grey;
+					}
+
+					dd a {
+						text-decoration: none;
+						font: 700 18px/24px "微软雅黑","SimSun";
+
+					}
+				</style>
+
+				<hr style="margin-top: 100px;">
+
+				<div style="float: left;">
+					<dl>
+					<dt>购物指南</dt>
+						<dd>
+							<a href="#">购物流程</a><br>
+							<a href="#">会员介绍</a><br>
+							<a href="#">生活旅行/团购</a><br>
+							<a href="#">常见问题</a><br>
+							<a href="#">大家电</a><br>
+							<a href="#">联系客服</a>
+						</dd>
+					</dl>
+				</div>
+
+				<div style="float:left;">
+					<dl>
+					<dt>配送方式</dt>
+						<dd>
+							<a href="#">上门自提</a><br>
+							<a href="#">211限时达</a><br>
+							<a href="#">配送服务查询</a><br>
+							<a href="#">配送费收取标准</a><br>
+							<a href="#">海外配送</a>
+						</dd>
+					</dl>
+				</div>
+
+			<hr style="margin-top:300px;">
+
+			<table style="border-collapse: collapse;margin-left: 50px;">
+				<caption align="bottom">表格标题</caption>
+			<tr>
+				<td>生命壹号</td>
+				<td colspan="3">23</td>
+				
+			</tr>
+
+			<tr>
+				<td>许嵩</td>
+				<td>29</td>
+				<td>男</td>
+				<td rowspan="2">安徽</td>
+			</tr>
+
+			<tr>
+				<td>邓紫棋</td>
+				<td>23</td>
+				<td>女</td>
+				
+			</tr>
+
+		</table>
+
+		<a href="new.html" target="nwindow">在右窗口打开</a>
+		<style type="text/css">
+			
+			table td{
+				border: 1px solid black;
+			}
+		</style>
+			
+		</div>
+
+
+		<div style="width:400px;float: left;height: 1000px;">
+			<iframe src="gbook.php" scrolling="auto" frameborder="1" height="1000px" name="nwindow"></iframe>
+		</div>
+
+	</div>
+
+	
+<div style="clear:both;height: 16px;">
+	<hr style="margin-top:5px;">
+</div>
+	<div style="">
+		<style type="text/css">
+  /*
+	伪类选择器：动态伪类
+  */
+
+   /*
+	让文本框获取焦点时：
+	边框：#FF6F3D这种橙色
+	文字：绿色
+	背景色：#6a6a6a这种灰色
+   */
+	input:focus{
+		border:3px solid #FF6F3D;
+		color:white;
+		background-color:#6a6a6a;
+	}
+
+
+  </style>
+	<form action="one.php" method="get">
+		<fieldset>
+			<legend>基本信息</legend>
+			姓名：<input value="呵呵" class="pclass">逗比<br>
+			昵称：<input value="哈哈" readonly=""><br>
+			名字：<input type="text" value="name" disabled=""><br>
+			密码：<input type="password" value="pwd" size="50"><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>其他信息</legend>
+			性别：<input type="radio" name="gender" id="radio1" value="male" checked=""><label for="radio1">男</label>
+				  <input type="radio" name="gender" id="radio2" value="female" >女<br>
+			爱好：<input type="checkbox" name="love[]" value="eat" id="checkbox1" ><label for="checkbox1">吃饭</label>
+				  <input type="checkbox" name="love[]" value="sleep">睡觉
+				  <input type="checkbox" name="love[]" value="bat">打豆豆
+		</fieldset>
+		<input type="submit" value="tijiao">
+		</form>
+	</div>
+
+	<hr>
+<!--    背景图片的设置     -->
+	<div id="background_image">
+		<style type="text/css">
+		#background_image {
+            height: 465px;
+            background-image: url(http://img.smyhvae.com/20170813_1053.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+    </style>
+	</div>
+
+<!--    背景图片的设置     -->
+	<style type="text/css">
+		.img_wrap {
+			display: flex;
+		}
+
+		.img {
+			width: 200px;
+			height: 200px;
+			border:1px solid red;
+			background: url(http://img.smyhvae.com/20191006_1330.jpg) no-repeat;
+			margin-right: 20px;
+		}
+
+		.div1 {
+			background-size: cover;
+			background-position: center top;
+		}
+		.div2{
+			background-size: contain;
+			background-position: center;
+		}
+	</style> 
+	<div>
+		<section class="img_wrap">
+		<div class="img div1" title="cover"></div>
+		<div class="img div2" title="contain"></div>
+
+		</section>
+	</div>
+
+<!--   渐变按钮的设置     -->
+ <style type="text/css">
+       
+        .nav4 {
+        	height: 300px;
+            width: 800px;
+            text-align: center;
+            padding-top: 50px;
+            margin: 0 auto;
+            background-color: #f8fcd4;
+        }
+
+        /*设置按钮基本样式*/
+        .nav4 a {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1px solid #e59500;
+            
+            background-image: linear-gradient(
+                    to bottom,
+                    #FFB700 0%,
+                    #FF8C00 100%
+            );
+        	}
+
+        .nav4 a:link {
+    		color: #fff;
+
+        }
+
+        .nav4 a:visited {
+        	color: #fff;
+        }
+        .nav4 a:hover {
+        	color: blue;
+        }
+        
+
+    </style>
+
+<div class="nav4">
+    <a href="http://www.baidu.com" target="_blank" title="进入百度页面">导航1</a>
+    <a href="http://www.baidu.com" target="_blank">导航2</a>
+    <a href="http://www.baidu.com" target="_blank">导航3</a>
+    <a href="http://www.baidu.com" target="_blank">导航4</a>
+    <a href="http://www.baidu.com" target="_blank">导航5</a>
+   <a href="http://www.baidu.com" target="_blank">导航6</a>
+</div>
+
+<hr>
+	<div style="width:970px;height:103px">
+		<div style="width:277px;height:103px ;float: left;background-color: red;"></div>
+		<div style="width:137px;height:49px ;float: right;background-color: green;"></div>
+		<div style="width:679px;height:46px ;float: right;background-color: green;margin-top:8px ;"></div>
+	</div>
+
+	<div style="width:970px;height:435px;margin:10px 0px;">
+		<div style="width:310px;height:435px ;float: left;background-color: yellow;"></div>
+		<div style="width:450px;height:240px ;float: left;background-color: blue;margin-left:10px;"></div>
+		<div style="width:190px;height:400px ;float: right;background-color: pink;margin-left: 10px;"></div>
+		<div style="width:450px;height:110px ;float: left;background-color: blue;margin: 10px 0px 10px 10px;"></div>
+		<div style="width:450px;height:30px ;float: left;background-color: blue;margin-left: 10px;"></div>
+		
+		<div style="width:650px;height:25px ;float: left;background-color: green;margin-left: 10px;margin-top: 10px;"></div>
+		
+	</div>
+
+	<div style="width:970px;height:35px;margin:10px 0px;background-color: blue;">
+		
+	</div>
+
+	<div style="background-color:green;border: 1px solid blue;width: 100px;height: 100px;padding: 10px;">
+		<p style="color:red;margin: 0px;font-size: 50%;" >定义父子间距用padding而不是margin</p>
+	</div>
+	<hr>
+	<div><h2 style="text-shadow: 1px 1px 1px #fff,-1px -1px 1px #000;">子绝父相用于压盖效果</h2></div>
+
+	<style type="text/css">
+		.box1{
+			margin: 100px;
+			width: 308px;
+			height: 307px;
+			border: 1px solid #FF7E00;
+			position: relative;  /*子绝父相*/
+			
+
+		}
+		.box1 .image img{
+			width: 308px;
+			height: 196px;
+		}
+		.box1 .dtc{
+			display: block;  /*转为块级元素，才能设置span的宽高*/
+			width: 52px;
+			height: 28px;
+			background-image: url(http://img.smyhvae.com/20180116_1115.png);
+			background-position: -108px 0px; /*这里用到了精灵图*/
+			position: absolute;  /*采用绝对定位的方式，将精灵图盖在最上层*/
+			top: -9px;
+			left: 13px;
+		}
+		.box1 h4{
+			background-color: black;
+			color: white;
+			width:308px;
+			height: 40px;
+			line-height: 40px;
+			position: absolute;
+			top: 156px;
+		}
+	</style>
+	
+		<div class="box1">
+		<span class="dtc"></span>
+		<div class="image">
+			<img src="http://img.smyhvae.com/20180116_1116.jpg" alt="">
+		</div>
+		<h4>广东深圳宝安区建安一路海雅缤纷城4楼</h4>
+		</div>
+	
+<!--  导航条 -->
+	<style type="text/css">
+		
+body{
+			/*为什么要写这个？*/
+			/*不希望我们的页面被nav挡住*/
+			padding-top: 60px;
+			/*IE6不兼容固定定位，所以这个padding没有什么用，就去掉就行了*/
+			_padding-top:0;
+		}
+
+
+		.nav1{
+			position: fixed;
+			top: 0;
+			left: 0;
+	 		width: 100%;
+			height: 60px;
+			background-color: #333;
+			z-index: 99999999;
+			margin: 0;
+			padding: 0;
+		}
+		.inner_c{
+			width: 1000px;
+			height: 60px;
+			margin: 0 auto;
+
+		}
+		.inner_c ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.inner_c ul li{
+			float: left;
+			width: 100px;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+		}
+		.inner_c ul li a{
+			display: block;
+			width: 100px;
+			height: 60px;
+			color:white;
+			text-decoration: none;
+		}
+		.inner_c ul li a:hover{
+			background-color: gold;
+		}
+		
+		
+
+		@font-face {
+  		font-family: 'iconfont'!important;
+  		src: 
+      url('//at.alicdn.com/t/font_3262114_mt8c5az9ep.ttf') format('truetype');
+}
+		.logo{
+			font-family: "iconfont";
+		}
+	</style>
+</head>
+
+	<div class="nav1">
+		<div class="inner_c">
+			<ul class="logo">
+				<li><a href="#">网页栏目&#xe665;</a></li>
+				<li><a href="#">内裤一样</a></li>
+				<li><a href="#">网页栏目</a></li>
+				<li><a href="#">为什么不一样</a></li>
+				<li><a href="#">网页栏目</a></li>
+				<li><a href="#">网页栏目</a></li>
+				<li><a href="#">网页栏目</a></li>
+				<li><a href="#">网页栏目</a></li>
+				<li><a href="#">网页栏目</a></li>
+				<li><a href="#">&#xe664;</a></li>
+			</ul>
+		</div>
+	</div>
+
+<style type="text/css">
+	.nav3 {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		overflow: visible;
+
+	}
+
+	
+	.nav3 li a{
+		padding: 14px 16px;
+		color: white;
+		text-decoration: none;
+		display: inline-block;
+		background-color: blue;
+	}
+	
+
+	
+
+	.nav3 .dropdown-content {
+		display: none;
+		position: absolute;
+		text-align: center;
+		z-index: 1;
+	}
+
+	.nav3 .dropdown-content a{
+		display: block;
+		padding: 12px 16px;
+		background-color: black;
+		text-align: center;
+	}
+	.nav3 .dropdown:hover .dropdown-content{
+		display: block;
+	}
+	.dropdown a:hover{
+		transform: translate(-10px,-10px);
+	}
+
+</style>
+			 <ul class="nav3">
+                 
+                    
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn"> amino acid descriptor</a>
+                        <div class="dropdown-content">
+                            <a href="../AAintroduction.html">introduction</a>
+                            <a href="../search-descriptor.html">search</a>
+                        </div>
+                    </li>
+
+                    
+                </ul>
+
+   <hr style="margin-top:40px;">
+
+
+   <div style="height: 100px;">
+	   <div class="test">
+	   		<a href="#">撒大大</a>
+	   		<a href="#">asdasdad </a>
+	   </div>
+	</div>
+
+   <style type="text/css">
+   	.test a{
+   		display: block;
+   		padding: 14px 16px;
+   		background-color: black;
+   		color: white;
+
+   	}
+   	.test{
+   		position: absolute;
+   		height: 100px;
+   	}
+   </style>
+<div style="margin-top:10px;clear: both;height: 15px;">
+	<hr>
+</div>
+
+</div>
+<!-- 博雅互动导航栏 -->
+
+	<div class="body">
+	 <div class="header">
+	        <div class="inner_c">
+	            <div class="logo">
+	                <img src=" " alt="">
+	            </div>
+	            <div class="nav">
+	                <ul>
+	                    <li><a href="#" class="current">首页</a></li>
+	                    <li><a href="#">博雅游戏</a></li>
+	                    <li><a href="#">博雅新闻</a></li>
+	                    <li><a href="#">关于我们</a></li>
+	                    <li><a href="#">客服中心</a></li>
+	                    <li class="last"><a href="#">投资者关系</a></li>
+	                </ul>
+	            </div>
+	            <div class="jrwm_box">
+	                <div class="jrwm">
+	                    <a href="https://www.google.com/" target="_blank">加入我们</a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	 </div>
+
+<style type="text/css">
+	 
+        .body{
+            font-size: 14px;
+            font-family: "Microsoft YaHei","SimSun";
+            overflow: hidden;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .header{
+            height: 58px;
+            background-color: #191D3A;
+        }
+        /*版心*/
+        .inner_c{
+            width: 1000px;
+            margin: 0 auto; /*让导航条、内容区域等部分的版心在父亲里居中*/
+        }
+        /*导航条的logo*/
+        .header .logo{
+            float: left;
+            margin-right: 40px;
+        }
+        .header .nav{
+            float: left;
+        }
+        .header .nav ul{
+            list-style: none; /*去掉列表前面的圆点*/
+        }
+        .header .nav ul li{
+            float: left;
+            width: 100px;
+            line-height: 58px; /*让行高等于这一行的高度，保证里面的文字垂直居中*/
+            border-left: 1px solid #252947; /*每个li之间有间隔线*/
+        }
+        .header .nav ul li.last{
+            border-right: 1px solid #252947;/*最后一个li的右边加间隔线*/
+        }
+        .header .nav ul li a{
+            display: block; /*将超链接转为块儿，可以保证其霸占父亲的整行*/
+            height: 58px;
+            text-decoration: none; /*去掉超链的下划线*/
+            color:#818496;
+            text-align: center;  /*让这个div内部的文本居中*/
+        }
+        .header .nav ul li a.current{
+            color:white;
+            background: #252947;
+        }
+        .header .nav ul li a:hover{
+            color: white;
+            background: #252947;
+        }
+
+        .header .jrwm_box{
+            float: left;
+            height: 58px;
+            width: 100px;
+            padding-left: 48px;
+            padding-top: 12px;
+
+        }
+        /*放背景图片的div*/
+        .header .jrwm_box .jrwm{
+            height: 34px;
+            background-color: green;
+            background-repeat: no-repeat;
+            text-align: center; /*让这个div内部的超链接居中*/
+            border-radius: 10%;
+        }
+        .header .jrwm_box .jrwm a{
+            display: block; /*将超链接转为块儿，可以保证其霸占父亲的整行*/
+            line-height: 34px; /*让行高为背景图片的高度，可以保证超链接的文字在背景图片里垂直居中*/
+            text-decoration: none; /*去掉超链的下划线*/
+            color: white;
+
+        }
+</style>
+
+<!-- 边框圆角属性 -->
+<div class="parent">
+    <div class="box"><span>1</span></div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+</div>
+
+<style type="text/css">
+	 .parent {
+            width: 400px;
+            overflow: hidden;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            float: left;
+            position: relative;
+            top: 0px;
+            overflow: hidden;
+            border: 1px solid rgb(144, 12, 63);
+
+            margin: 20px;
+            text-align: center;
+            line-height: 100px;
+            color: #fff;
+            font-size: 50px;
+            background-color: rgb(255, 141, 26);
+            transition: all 1s;
+
+        }
+
+        .box:hover{
+        	top: -5px;
+        	box-shadow: 0 0 5px blue;
+        	border-radius: 50%;
+        	transform: translate(10px,10px);
+        }
+
+        .box span{
+        	position: absolute;
+        	left: 0;
+        	bottom: -80px;
+        	width: 100%;
+        	transition: all 1s;
+        }
+        .box:hover span{
+        	bottom: 0;
+        }
+        /*画圆形的方式一*/
+        
+
+        /*画圆形的方式二*/
+        .box:nth-child(2) {
+            border-radius: 50%;
+        }
+
+        .box:nth-child(3) {
+            border-radius: 100px 0 0 0;
+        }
+
+        .box:nth-child(4) {
+            border-radius: 100px/50px;
+        }
+
+        .box:nth-child(5) {
+            border-radius: 10%;
+        }
+
+        .box:nth-child(6) {
+            border-radius: 0 100px;
+        }
+
+       
+</style>
+<hr>
+<!-- 用@keyframes创建动画，animation调用 -->
+<style type="text/css">
+	.shark {
+            width: 509px;
+            height: 270px; /*盒子的宽高是一帧的宽高*/
+            border: 1px solid #000;
+          
+            background: url(http://img.smyhvae.com/20180209_shark.png) left top; /* 让图片一开始位于 0 px的位置 */
+            animation: sharkRun 1s steps(8) infinite; /* 一秒之内，从顶部移动到底部，分八帧， */
+        }
+       .sharkBox{
+       	width: 509px;
+       	height: 270px;
+       	margin-top: 20px;
+       	animation: sharkBoxRun 10s infinite;;
+       }
+
+        @keyframes sharkRun {
+            0% {
+            }
+
+            /* 270 * 8 = 2160 */
+            100% {
+                background-position: left -2160px; /* 动画结束时，让图片位于最底部 */
+            }
+        }
+
+         @keyframes sharkBoxRun {
+            0% {
+                transform: translate(-600px,0px);
+            }
+
+            100% {
+                transform: translate(600px,200px);
+            }
+        }
+</style>
+
+<div class="sharkBox">
+    <div class="shark"></div>
+</div>
+
+<hr style="margin-top:500px">
+
+<p class="logo">图标&#xe664;</p>
+
+
+
+ <style>
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            cursor: pointer;
+        }
+    </style>
+
+
+
+<div id="box1" ></div>
+
+<script type="text/javascript">
+    var div1 = document.getElementById("box1");
+    //点击鼠标时，原本粉色的div变大了，背景变红了
+    div1.onclick = function () {
+        div1.style.width = "200px";   //属性值要写引号
+        div1.style.height = "200px";
+        div1.style.backgroundColor = "red";   //属性名是backgroundColor，不是background-color
+    }
+</script>
+
+
+
+
+<div id='divchange' style="width: 100px;height: 100px;background-color: pink;"></div>
+<script>
+
+    var div = document.getElementById("divchange");
+    div.onmouseover = function () {
+        div.style.width = "200px";
+        div.style.height = "200px";
+        div.style.backgroundColor = "black";
+        div.style.opacity = "0.2";   //设置背景色的透明度。单位是0.1
+        div.style.filter = "alpha(opacity=20)";   //上一行代码的兼容性写法。注意单位是百进制
+    }
+
+</script>
+
+<div id="rocket" style="width: 20px;height:20px;border: 1px solid black;font-size: 18px;font-weight: bold;text-align: center;line-height: 20px;background-color: aliceblue;position: fixed;bottom: 50px;right: 20px;display: none;" title="返回顶部">&uarr;</div>
+
+
+<div >
+	<ul id="tablecolor-change">
+    <li>生命壹号，永不止步</li>
+    <li>生命壹号，永不止步</li>
+    <li>生命壹号，永不止步</li>
+    <li>生命壹号，永不止步</li>
+    <li>生命壹号，永不止步</li>
+    <li>生命壹号，永不止步</li>
+</ul>
+</div>
+
+
+<div id="aclick">
+	<a href="">1</a>
+	<a href="">1</a>
+	<a href="">1</a>
+	<a href="">1</a>
+	<a href="">1</a>
+	<a href="">1</a>
+</div>
+<script type="text/javascript">
+let obj1 = {
+    name: 'qianguyihao',
+    age: 28,
+    desc: 'hello world',
+};
+
+let obj2 = {
+    name: '许嵩',
+    sex: '男',
+};
+
+// 【关键代码】浅拷贝：把 obj1 赋值给 obj2。这行代码的返回值也是 obj2
+Object.assign(obj2, obj1);
+obj1.age=30;
+
+console.log(JSON.stringify(obj2));
+console.log(JSON.stringify(obj1));
+
+$("#aclick a").click(function() {
+	let num = $(this).index() + 1;
+	alert(num);
+})
+
+
+
+</script>
+
+<!-- <marquee>asdasd</marquee> -->
+<!-- <script type="text/javascript">
+setTimeout(() => {
+    console.log('异步任务');
+}, 2000);
+
+// 伪代码
+sleep(5000); //表示很耗时的同步任务
+console.log("同步任务");
+</script> -->
+
+ <script type="text/javascript">
+            const obj5 = {
+                name: 'smyhvae',
+                age: 28,
+                gender: '男',
+                address: 'shenzhen',
+                 dataa:{fff:211},	
+                sayHi: function () {
+                    console.log(this.fff);
+                   
+                
+                },
+                 	
+            };
+
+           for (var key in obj5) {
+           	console.log(key);
+           		console.log(obj5[key]);
+           }
+          console.log(obj5.name);
+          console.log(obj5['name']);
+         let sad = 4;
+          sad = 5;
+          console.log(sad);
+         obj5.name = "asda";
+         console.log(obj5.name);
+         console.log(obj5['dataa'].fff);
+         console.log(obj5.sayHi.call(obj5.dataa));
+
+	function* generateSequence() {
+	  yield 1717;
+	  yield 2;
+	  return 3;
+	}
+generateSequence();
+let generator = generateSequence();
+let ger=generator.next();
+console.log(generator);
+
+const nearr = [0,2,3,4];
+console.log(nearr[4]+1);
+
+
+</script>
+<!-- <aside>侧边栏</aside> -->
+
+
+
+
+<script src="jstest.js"></script>
+
+</body>
+
+</html>
